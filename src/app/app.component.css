@@ -1,0 +1,397 @@
+/* ******************************************** */
+/* NAVBAR SECTION */
+/* ******************************************** */
+.nav1 {
+  padding: 10px 0 10px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav1 .navbar-brand span {
+  color: #18224d;
+  letter-spacing: 1px;
+}
+
+.nav1 .navbar-brand img {
+  width: 70px;
+  margin-top: -10px;
+}
+
+.navbar-nav {
+  display: inline-block;
+  padding: 0 0 0 0;
+}
+
+.navbar-nav>li {
+  display: inline-block;
+}
+
+.navbar-nav a {
+  color: #3c4043;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav1 .signUpBtn {
+  background-color: #18224d;
+  width: 100px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.nav1 .contactBtn {
+  background-color: transparent;
+  width: 100px;
+  color: #3c4043;
+  border-radius: 4px;
+  border: 4px solid;
+  padding: 2.5px 0 2.5px 0;
+}
+
+.loginBtnSide {
+  background-color: transparent;
+  width: 100px;
+  color: #3c4043;
+  border-radius: 0px;
+  border: 4px solid;
+  margin-top: 10px;
+  padding: 2.5px 0 2.5px 0;
+}
+
+@media (max-width: 768px) {
+  .nav1 {
+    width: 100% !important;
+    padding: 5px 10px !important;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #homeSubmenu a img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .nav1 .navbar-brand img {
+    margin-left: 0px;
+  }
+}
+
+/* ******************************************* *?/
+  MAIN / LANDING SECTION SECTION
+/* ******************************************* */
+main {
+  min-height: 100vh;
+}
+
+main .banner {
+  background-color: #CB9F18;
+  height: 30vh;
+  border-radius: 0 0 100% 100%;
+}
+
+main .safariwayUSP{
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
+main h1 {
+  color: #3c4043;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main p {
+  color: #80868b;
+  letter-spacing: 0.5px;
+}
+
+main .btn {
+  width: 200px;
+  color: #fff !important;
+  background-color: #18224d;
+  border-radius: 4px;
+  /* transition: all .3s ease; */
+}
+
+main .melioraUSP {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+main #meliora_illustration {
+  width: 600px;
+}
+
+main #mulikaLandingSection {
+  width: 300px;
+}
+
+main #tiaraLandingSection {
+  width: 300px;
+}
+
+main #safariwayLandingSection {
+  width: 400px;
+}
+
+main #safariway_illustration {
+  width: 800px;
+}
+
+/* ******************************************* *?/
+  features SECTION
+/* ******************************************* */
+.features {
+  min-height: 60vh;
+  padding-top: 5%;
+  padding-bottom: 1%;
+  background-color: #f1f3f4;
+}
+
+.features h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5f6368;
+}
+
+.features .card {
+  text-align: center;
+  border: none;
+  min-height: 150px;
+  margin-bottom: 10%;
+  box-shadow: 0 20px 23px 0 rgba(0, 0, 0, 0.1);
+  transition: all .2s ease;
+}
+
+.features .card:hover {
+  margin-top: -5px;
+  box-shadow: 0 20px 23px 0 rgba(0, 0, 0, 0.2);
+}
+
+.features .card img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.features .card h4 {
+  color: #5f6368;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.features .card p {
+  color: #80868b;
+  letter-spacing: 0.5px;
+}
+
+.features .card a {
+  text-decoration: none;
+  color: #dadce0;
+  font-weight: 600;
+  transition: all .3s;
+  position: absolute;
+  bottom: 20px;
+}
+
+.features .card:hover a {
+  color: #18224d;
+}
+
+.features .card:hover a::after {
+  content: '→';
+  margin-left: 10px;
+}
+
+/* ******************************************* *?/
+  use_cases SECTION
+/* ******************************************* */
+.use_cases {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #fdfdfd;
+}
+
+.use_cases h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5f6368;
+}
+
+.use_cases .card {
+  text-align: center;
+  border: none;
+  min-height: 200px;
+  margin-bottom: 10%;
+  box-shadow: 0 20px 23px 0 rgba(0, 0, 0, 0.1);
+  transition: all .2s ease;
+}
+
+.use_cases.safariway .card {
+  min-height: 330px;
+  /* display: flex; */
+}
+
+.use_cases.safariway .card img {
+  width: 70px;
+}
+
+.use_cases .card:hover {
+  margin-top: -5px;
+  box-shadow: 0 20px 23px 0 rgba(0, 0, 0, 0.2);
+}
+
+.use_cases .card img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.use_cases .card h4 {
+  color: #5f6368;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.use_cases .card p {
+  color: #80868b;
+  letter-spacing: 0.5px;
+}
+
+.use_cases .card a {
+  text-decoration: none;
+  color: #dadce0;
+  font-weight: 600;
+  transition: all .3s;
+  position: absolute;
+  bottom: 20px;
+}
+
+.use_cases .card:hover a {
+  color: #18224d;
+}
+
+.use_cases .card:hover a::after {
+  content: '→';
+  margin-left: 10px;
+}
+
+/* ******************************************* *?/
+  FINAL ACTION SECTION
+/* ******************************************* */
+.finalAction {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #efefef;
+}
+
+.finalAction h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5f6368;
+}
+
+.finalAction .btn {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  background-color: #18224d;
+  width: 300px;
+  border-radius: 50px;
+}
+
+.footer {
+  padding: 2vh 0 2vh 0;
+  /* border-top: 1px solid #0002; */
+}
+
+@media (max-width: 3000px) {
+  .container {
+    max-width: 2000px !important;
+  }
+
+  main {
+    padding-top: 20vh;
+  }
+
+  main #safariway_illustration {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 2000px) {
+  .container {
+    max-width: 1500px !important;
+  }
+
+  main {
+    padding-top: 15vh;
+  }
+
+  main #safariway_illustration {
+    width: 750px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .container {
+    max-width: 1300px !important;
+  }
+
+  main {
+    padding-top: 15vh;
+  }
+
+  main #safariway_illustration {
+    width: 650px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1000px !important;
+  }
+
+  main {
+    padding-top: 15vh;
+  }
+
+  main #safariway_illustration {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: auto !important;
+  }
+
+  main {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    text-align: center;
+  }
+
+  main .safariwayUSP{
+    padding: 0 20px 0 20px ;
+  }
+
+  main h1 {
+    color: #3c4043;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  main p {
+    color: #80868b;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  main #safariwayLandingSection {
+    width: 300px;
+  }
+
+  main #safariway_illustration {
+    width: 300px;
+  }
+}
