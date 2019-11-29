@@ -14,33 +14,95 @@
 
       </ul>
 
-      <a href="#" class="btn signUpBtn mr-2 d-none d-sm-none d-md-block">Sign up</a>
+      <a (click)="contact()" class="btn signUpBtn mr-2 d-none d-sm-none d-md-block">Sign up</a>
 
-      <a href="https://safariway.co.ke" class="btn contactBtn">Login</a>
+      <a href="https://portal.safariway.co.ke" class="btn contactBtn">Login</a>
 
     </div>
 
   </nav>
 </div>
 
-
 <!-- LANDING SECTION -->
 <main class="">
   <div class="container">
     <div class="row">
-
       <div class="col-md-6 mb-5 safariwayUSP">
         <!-- <img class="mb-4" id="safariwayLandingSection" src="../../assets/safariway/safariway_wordmark.png" alt=""> -->
         <h1 class="mb-5">Seamless connections for Growth</h1>
-        <p class="mb-5">Share information seamlessly and timely within your organization <br> and among your industry players on a simple and secure platform, enabling you handle <br> more business requests, resulting in happier clients and higher
+        <p class="mb-5">Share information seamlessly and timely within your organization <br> and among your industry
+          players on a simple and secure platform, enabling you handle <br> more business requests, resulting in happier
+          clients and higher
           profitability.</p>
-        <a class="btn callToAction mb-5" href="https://safariway.co.ke">Get Started</a>
+        <a class="btn callToAction mb-5" (click)="contact()">Get Started</a>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6" [hidden]=isContacting>
         <img id="safariway_illustration" src="../../assets/safariway/safariway_illustration.png" alt="svg">
       </div>
 
+      <div class="col-md-6 " [hidden]="!isContacting">
+
+
+
+        
+        <div class="form" [hidden]=hasSucceeded>
+          <form name="contactForm" role="form" (ngSubmit)="sendMail()" [formGroup]="contactForm">
+              <!-- <h5 class="mb-5">Tell us who you are and discover a new way of doing business</h5> -->
+
+
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" formControlName="name" id="name" placeholder="Enter name">
+                      </div>
+          
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" class="form-control" formControlName="phone_number" id="phone_number"
+                          placeholder="Enter phone number">
+                      </div>
+                  </div>
+          
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter Email">
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" class="form-control" formControlName="company" id="company"
+                              placeholder="Enter company name">
+                          </div>
+                      </div>
+              
+                    </div>    
+
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea class="form-control" id="comments" formControlName="comments" rows="3"></textarea>
+            </div>
+
+            <div class="form-group" [hidden]=!hasError>
+              <label class="alert alert-danger">* Unable to send. Please try again later.</label>
+            </div>
+            <button type="submit" class="btn mt-2">Submit</button>
+
+          </form>
+        </div>
+
+        <div class="text-center mt-5" [hidden]=!hasSucceeded>
+          <label class="alert alert-success">Thank you for contacting us. Our team will be in touch</label>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -63,7 +125,8 @@
           <span></span>
 
           <h4 class="mb-4">Information Management</h4>
-          <p>Information regarding hospitality industry stakeholders, areas of interest, facilities, vehicles, professionals and many more in one place.</p>
+          <p>Information regarding hospitality industry stakeholders, areas of interest, facilities, vehicles,
+            professionals and many more in one place.</p>
 
         </div>
       </div>
@@ -83,7 +146,8 @@
 
 
           <h4 class="mb-4">Product Management </h4>
-          <p>Create products and quotations in a few minutes. No more manual calculations with our digitized contracts.<br> &nbsp;</p>
+          <p>Create products and quotations in a few minutes. No more manual calculations with our digitized
+            contracts.<br> &nbsp;</p>
 
         </div>
 
@@ -174,7 +238,7 @@
 <div class="container-fluid finalAction">
   <div class="container text-center">
     <h1 class="mb-5">Ready to start your new experience !</h1>
-    <a href="https://safariway.co.ke" class="btn p-2">yes, let's get started !</a>
+    <a href="https://portal.safariway.co.ke" class="btn p-2">yes, let's get started !</a>
   </div>
 
 </div>

@@ -139,6 +139,31 @@ main #safariway_illustration {
 }
 
 /* ******************************************* *?/
+  SIGN UP FORM SECTION
+/* ******************************************* */
+.form {
+  padding: 10vh 100px 10vh 100px;
+}
+
+.form input,
+.form textarea {
+  border: 1.5px solid #80868b;
+  padding: 20px;
+}
+
+.form select {
+  border: 1.5px solid #80868b;
+}
+.form .alert{
+  width: 100%;
+}
+.form .btn {
+  width: 100%;
+  color: #fff;
+  background-color: #18224d;
+}
+
+/* ******************************************* *?/
   features SECTION
 /* ******************************************* */
 .features {
@@ -297,6 +322,8 @@ main #safariway_illustration {
   width: 300px;
   border-radius: 50px;
 }
+
+
 
 .footer {
   padding: 2vh 0 2vh 0;
