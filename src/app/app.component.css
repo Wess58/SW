@@ -144,6 +144,9 @@ main #safariway_illustration {
 .form {
   padding: 10vh 100px 10vh 100px;
 }
+.successAlert {
+  padding: 20vh 100px 20vh 100px;
+}
 
 .form input,
 .form textarea {
